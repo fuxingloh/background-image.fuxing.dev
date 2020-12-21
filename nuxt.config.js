@@ -22,8 +22,6 @@ export default {
       {rel: 'icon', type: 'image/png', href: '/logo.png'}
     ]
   },
-  css: [],
-  plugins: [],
   components: true,
   buildModules: [
     '@nuxt/typescript-build',
@@ -31,7 +29,42 @@ export default {
   ],
   modules: [
     '@nuxt/content',
+    '@nuxt/image',
   ],
-  content: {},
-  build: {}
+  content: {
+    markdown: {
+      remarkPlugins: [
+        ['remark-code-import-replace', {
+          baseDir: 'content/snippets',
+          replace: (node, meta, {u}) => {
+            const padding = meta.padding ?? '0'
+            const component = meta.file.name
+
+            return [
+              u('html', {value: `<snippet-mock-browser>`}),
+              u('html', {value: `<div style="padding: ${padding}">`}),
+              u('html', {value: `<${component}>`}),
+              u('html', {value: `</${component}>`}),
+              u('html', {value: `</div>`}),
+              u('html', {value: `<template v-slot:snippet>`}),
+              node,
+              u('html', {value: `</template>`}),
+              u('html', {value: `</snippet-mock-browser>`}),
+            ]
+          }
+        }],
+      ],
+      prism: {
+        theme: 'prism-themes/themes/prism-material-oceanic.css'
+      }
+    },
+  },
+  hooks: {
+    'components:dirs': async (dirs) => {
+      dirs.push({
+        path: "~/content/snippets",
+        global: true
+      })
+    }
+  }
 }
