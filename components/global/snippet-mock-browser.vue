@@ -39,6 +39,7 @@ export default {
   margin: 0 !important;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+  font-size: 0.75em;
 }
 
 .bg-pre-color {

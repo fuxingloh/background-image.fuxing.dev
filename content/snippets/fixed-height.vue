@@ -4,7 +4,7 @@
       <section>
         <div>
           <h2>Image with fixed height</h2>
-          <p>Height fixed the 30% of browser viewport. E.g. you want to use this as a landing page banner.</p>
+          <p>Height fixed the 25% of browser viewport.</p>
         </div>
       </section>
     </div>
