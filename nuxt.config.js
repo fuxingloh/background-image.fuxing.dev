@@ -31,6 +31,9 @@ export default {
     '@nuxt/content',
     '@nuxt/image',
   ],
+  plugins: [
+    '~/plugins/gtag.client'
+  ],
   content: {
     markdown: {
       remarkPlugins: [

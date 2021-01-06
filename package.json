@@ -13,7 +13,9 @@
     "core-js": "^3.6.5",
     "nuxt": "^2.14.6",
     "prism-themes": "^1.5.0",
-    "remark-code-import-replace": "^0.2.0"
+    "remark-code-import-replace": "^0.2.0",
+    "vue-gtag": "^1.10.0",
+    "vue-horizontal": "^0.8.3"
   },
   "devDependencies": {
     "@nuxt/image": "^0.0.4",

@@ -1,12 +1,11 @@
 <template>
   <div class="content">
     <div class="black-on-white">
-      <h2>Making it easier to see.</h2>
-      <h3>Text is the content with a translucent black layer.</h3>
+      <h3>Translucent black layer.</h3>
       <p>Black background layer with white text.</p>
     </div>
     <div class="white-on-black">
-      <h3>Text is the content with a translucent white layer and blur.</h3>
+      <h3>Translucent white layer and blur.</h3>
       <p>White background layer with black text.</p>
     </div>
   </div>
