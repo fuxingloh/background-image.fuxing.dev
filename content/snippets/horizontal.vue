@@ -5,7 +5,7 @@
         <img src="/joe-green-jewel.jpg">
         <div class="overlay">
           <div>
-            <h2>{{i}}</h2>
+            <h2>{{ i }}</h2>
             <h5>Image in Horizontal Scroll</h5>
           </div>
         </div>
