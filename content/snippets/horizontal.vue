@@ -5,7 +5,7 @@
         <img src="/joe-green-jewel.jpg">
         <div class="overlay">
           <div>
-            <h2>{{i}}</h2>
+            <h2>{{ i }}</h2>
             <h5>Image in Horizontal Scroll</h5>
           </div>
         </div>
@@ -34,6 +34,9 @@ section {
   position: relative;
   overflow: hidden;
   border-radius: 4px;
+
+  /* FYI: https://github.com/twbs/bootstrap/issues/13640 */
+  min-height: 1px;
 }
 
 .overlay {
