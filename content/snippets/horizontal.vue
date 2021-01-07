@@ -34,9 +34,6 @@ section {
   position: relative;
   overflow: hidden;
   border-radius: 4px;
-
-  /* FYI: https://github.com/twbs/bootstrap/issues/13640 */
-  min-height: 1px;
 }
 
 .overlay {
